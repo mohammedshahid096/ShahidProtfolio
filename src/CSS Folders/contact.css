@@ -1,0 +1,92 @@
+.row {
+    display: flex;
+}
+
+.leftcol {
+    width: 35%;
+}
+
+.leftcol p {
+    margin: 10px 0 10px 0;
+
+}
+
+.leftcol p .fas {
+    color: #ff004f;
+    font-size: x-large;
+    margin-right: 5px;
+}
+
+.leftcol a {
+    text-decoration: none;
+    color: #fff;
+    word-break: break-all;
+}
+
+.socialicons {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.socialicons a {
+    margin-right: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.socialicons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.downloadresume {
+    display: block;
+    margin: 38px 0;
+    width: fit-content;
+    padding: 13px 40px;
+    color: #fff;
+    background-color: #ff004f;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.rightcol {
+    flex-basis: 70%;
+}
+
+.rightcol input,
+.rightcol textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 13px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.rightcol input:focus,
+.rightcol textarea:focus {
+    color: #fff;
+}
+
+#submitbtn {
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+/* !----------------- media queries   -------------------- */
+@media screen and (max-width:600px) {
+    .row {
+        flex-direction: col;
+    }
+
+    .leftcol {
+        width: 100%;
+    }
+}
