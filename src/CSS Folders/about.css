@@ -102,8 +102,12 @@
         font-size: 20px;
     }
 
+    #titles {
+        overflow-x: scroll;
+    }
+
     .titles_link {
-        margin-right: 43px;
+        margin-right: 13px;
         font-size: 23px;
     }
 

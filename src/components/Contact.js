@@ -1,7 +1,13 @@
 import React from "react";
 import "../CSS Folders/contact.css";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillTwitterSquare,
+  AiFillInstagram,
+} from "react-icons/ai";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <div id="contact">
       <div className="container">
@@ -16,24 +22,25 @@ const Contact = () => {
               </a>
             </p>
             <p>
-              <i className="fas fa-phone-square"></i> +91 9347****
+              <i className="fas fa-phone-square"></i> +91 9347222304
             </p>
 
             <div className="socialicons">
-              <a href="/">
-                <i className="fab fa-facebook"></i>
+              <a href="https://github.com/mohammedshahid096">
+                {" "}
+                <AiFillGithub />
               </a>
 
-              <a href="/">
-                <i className="fab fa-twitter-sq"></i>
+              <a href="https://twitter.com/Mohamme23803128?t=AIpAkDg1vrccl9yjSp4XqA&s=09">
+                <AiFillTwitterSquare />
               </a>
 
-              <a href="/">
-                <i className="fab fa-instagram"></i>
+              <a href="https://instagram.com/mohammedshahid096?igshid=NTE5MzUyOTU=">
+                <AiFillInstagram />
               </a>
 
-              <a href="/">
-                <i className="fab fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/mohammed-shahid-9aa61222a">
+                <AiFillLinkedin />
               </a>
             </div>
             <button className="downloadresume">
@@ -65,11 +72,7 @@ const Contact = () => {
             <button
               className="downloadresume"
               id="submitbtn"
-              onClick={() =>
-                alert(
-                  "sorry as db is not conncected, please contact through a Gmail"
-                )
-              }
+              onClick={() => props.dbnotNotify(1)}
             >
               Submit
             </button>

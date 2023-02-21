@@ -47,7 +47,7 @@ const Header = () => {
           </nav>
 
           <div className="header-text">
-            <p id="changinganimation">Web Developer</p>
+            <p id="changinganimation">MERN Developer</p>
 
             <h1>
               Hi, I'm <br /> <span>Mohammed Shahid</span> <br /> From Hyderabad

@@ -6,7 +6,7 @@ import work_4 from "../images/waterwaste.png";
 import work_5 from "../images/chatapplication.jpg";
 import work_6 from "../images/weatherapp.jpg";
 
-const Projects = () => {
+const Projects = (props) => {
   const [seemore, setseemore] = useState(false);
   const [true_or_false, settrue_or_false] = useState(true);
   const [btext, setbtext] = useState("See More");
@@ -15,6 +15,7 @@ const Projects = () => {
       setseemore(true);
       setbtext("See Less");
       settrue_or_false(false);
+      props.showNotify(2);
     } else {
       setseemore(false);
       setbtext("See More");
